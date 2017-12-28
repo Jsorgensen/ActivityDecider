@@ -24,5 +24,11 @@ class MainActivity : AppCompatActivity() {
             activityList.add(newActivity)
             addActivityText.text.clear()
         }
+
+        removeActivityButton.setOnClickListener{
+            val removeActivity = addActivityText.text.toString()
+            activityList.remove(removeActivity)
+            addActivityText.text.clear()
+        }
     }
 }
